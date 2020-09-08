@@ -1,6 +1,8 @@
 package br.edu.insper;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -44,10 +46,12 @@ public class Registro extends HttpServlet {
 		out.println("<html>");
 		out.println("<body>");
 		out.println("Nome: " + name );
+		out.println("<br>");
 		out.println("Email: " + email );
+		out.println("<br>");
 		out.println("Curso: " + course );
 		out.println("</body>");
-		out.println("</html>");  
+		out.println("</html>");
 	}
 
 }
